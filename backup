@@ -1,0 +1,8 @@
+1.HiTSDB
+boolean isRunning();
+2.HttpClientFactory
+//					LOGGER.info("Close idle connections, fixed cycle operation");
+3.pom.xml
+<version>0.0.2.20171221</version>
+4.HttpClient
+public CloseableHttpAsyncClient getHttpclient()

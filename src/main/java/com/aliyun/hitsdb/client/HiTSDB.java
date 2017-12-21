@@ -196,4 +196,6 @@ public interface HiTSDB extends Closeable {
 	 * @throws HttpUnknowStatusException Exception
 	 */
 	List<LastDPValue> lastdp(Timeline... timelines) throws HttpUnknowStatusException;
+	
+	boolean isRunning();
 }

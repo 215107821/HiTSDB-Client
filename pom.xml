@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.aliyun</groupId>
 	<artifactId>hitsdb-client</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.2.20171221</version>
 	<name>HiTSDB Client SDK</name>
 	<description>The Alibaba HiTSDB SDK for Java used for accessing High Performance Time Series Database</description>
 	<url>https://www.aliyun.com/product/hitsdb</url>
@@ -61,6 +61,19 @@
 	</dependencies>
 	<build>
 		<plugins>
+			<plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-source-plugin</artifactId>
+		        <version>2.2.1</version>
+		        <executions>
+		          <execution>
+		            <id>attach-sources</id>
+		            <goals>
+		              <goal>jar</goal>
+		            </goals>
+		          </execution>
+		        </executions>
+	      	</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

@@ -103,7 +103,7 @@ public class HttpClientFactory {
 			@Override
 			public void run() {
 				try {
-					LOGGER.info("Close idle connections, fixed cycle operation");
+//					LOGGER.info("Close idle connections, fixed cycle operation");
 					cm.closeIdleConnections(3, TimeUnit.MINUTES);
 				} catch(Exception ex) {
 					LOGGER.error("",ex);

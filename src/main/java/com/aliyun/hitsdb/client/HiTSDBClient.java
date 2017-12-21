@@ -509,4 +509,12 @@ public class HiTSDBClient implements HiTSDB {
 		return putSync(resultType,Arrays.asList(points));
 	}
 
+	@Override
+	public boolean isRunning() {
+		if (null != this.httpclient && null != this.httpclient.getHttpclient() && this.httpclient.getHttpclient().isRunning()) {
+			return true;
+		}
+		return false;
+	}
+
 }

@@ -330,4 +330,8 @@ public class HttpClient {
 		return httpAddressManager;
 	}
 
+	public CloseableHttpAsyncClient getHttpclient() {
+		return httpclient;
+	}
+
 }
